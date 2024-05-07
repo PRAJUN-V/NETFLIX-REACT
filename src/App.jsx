@@ -4,8 +4,8 @@ import { Home } from './pages/Home'
 import { AuthContextProvider } from './context/AuthContext'
 import { Login } from './pages/Login'
 import { Signup } from './pages/Signup'
-import { Account } from './pages/Account'
 import ProtectedRoute from './components/ProtectedRoute'
+import Account from './pages/Account'
 
 function App() {
 
