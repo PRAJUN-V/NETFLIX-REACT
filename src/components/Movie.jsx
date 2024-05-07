@@ -12,7 +12,8 @@ export const Movie = ({ item }) => {
 
     const movieID = doc(db, 'users', `${user?.email}`)
 
-    const saveShows = async () => {
+    const saveShows = async (e) => {
+        e.stopPropagation();
         if (user?.email) {
             setLike(!like);
             setSaved(true);
